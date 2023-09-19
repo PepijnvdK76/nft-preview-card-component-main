@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <title>Frontend Mentor | NFT preview card component</title>
+  <link href="/dist/output.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-[#0D1A2D] text-white font-['Outfit'] flex justify-center">
+<div>
+  <div class="bg-[#15273F] mx-6 max-h-[552px] max-w-[327px] my-16 p-6 rounded-xl static align-center">
+    <div class="group relative">
+      <img class="rounded  w-full object-cover " src="images/image-equilibrium.jpg">
+      <div class="absolute top-0 left-0 w-full h-0 flex flex-col justify-center items-center bg-[#00FFF7]/50  cursor-pointer opacity-0 group-hover:h-full group-hover:opacity-100 duration-200">
+        <img class="group-hover:opacity-100" src="images/icon-view.svg" alt="">
+      </div>
+    </div>
+    <h1 class="text-2xl font-bold py-5 hover:text-[#00FFF7] cursor-pointer">Equilibrium #3429</h1>
+    <p class=" font-light text-[#8BACDA]">Our Equilibrium collection promotes balance and calm.</p>
+    <div class="flex flex-row py-4">
+      <div class="flex basis-1/2 gap-2">
+        <img src="images/icon-ethereum.svg" alt="">
+        <p class="font-bold text-[#00FFF7]">0.041 ETH</p>
+      </div>
+      <div class="flex basis-1/2 justify-end gap-2 ">
+        <img src="images/icon-clock.svg" alt="">
+        <p class=" text-[#8BACDA] ">3 days left</p>
+      </div>
+    </div>
+    <div class="flex border-t-[1px] border-[#2F415B] pt-4 gap-3">
+      <img class="h-8 w-8 border rounded-full" src="images/image-avatar.png" alt="avatar">
+      <p class="self-center text font-light text-[#8BACDA]">Creation of <span
+              class="text-white hover:text-[#00FFF7] cursor-pointer">Jules Wyvern</span></p>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/PepijnvdK76 ">Pepijn van den Kieboom</a>.
+  </div>
+</div>
+</body>
+</html>
